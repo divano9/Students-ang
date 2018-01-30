@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+  color: blue;
+  font-family: Arial;
+  font-size: 50px;
+}
+
+body{
+  padding: 50px;
+  font-family: Arial;
+}
