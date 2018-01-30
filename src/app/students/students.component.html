@@ -1,7 +1,7 @@
 
 <div>
   <ul class="students">
-    <li *ngFor="let student of allStudents" (click)="onSelectedStudent(student)">
+    <li *ngFor="let student of allStudents" (click)="onSelectedStudent(student)" [class.selected]="student === selectedStudent">
       <span>{{ student.id }}</span> {{ student.name }}
     </li>
   </ul>

@@ -1,0 +1,21 @@
+.selected{
+  background-color: grey!important;
+  color: white;
+}
+
+.students{
+  margin: 4px;
+  list-style-type: none;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.students li{
+  cursor: pointer;;
+  background-color: teal;
+  border-radius: 10px;
+}
+
+.students li:hover{
+  background-color: aqua;
+}
