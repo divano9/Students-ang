@@ -1,7 +1,7 @@
 
 <div>
   <ul class="students">
-    <li *ngFor="let student of allStudents">
+    <li *ngFor="let student of allStudents" (click)="onSelectedStudent(student)">
       <span>{{ student.id }}</span> {{ student.name }}
     </li>
   </ul>
@@ -9,14 +9,11 @@
 
 
 
-
-
-
-<div class="">
-  <h2>{{ student.name }} details:</h2>
-    <div>{{ student.id }}. </div>
+<div *ngIf="selectedStudent">"
+  <h2>{{ selectedStudent.name }} details:</h2>
+    <div>{{ selectedStudent.id }}. </div>
     <div>
-      <input type="text" name="" value="" [(ngModel)]="student.name">
-      {{ student.name }}
+      <input type="text" name="" value="" [(ngModel)]="selectedStudent.name">
+      {{ selectedStudent.name }}
     </div>
 </div>
