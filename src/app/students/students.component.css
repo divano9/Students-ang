@@ -1,6 +1,7 @@
 .selected{
   background-color: grey!important;
   color: white;
+  border: 1px solid green;
 }
 
 .students{
@@ -14,8 +15,11 @@
   cursor: pointer;;
   background-color: teal;
   border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .students li:hover{
   background-color: aqua;
+  border-bottom: 1px solid silver;
 }
