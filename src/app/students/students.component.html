@@ -12,6 +12,8 @@
 <div *ngIf="selectedStudent">"
   <h2>{{ selectedStudent.name }} details:</h2>
     <div>{{ selectedStudent.id }}. </div>
+    <div>{{ selectedStudent.gender }}. </div>
+    <div>{{ selectedStudent.description }}. </div>
     <div>
       <input type="text" name="" value="" [(ngModel)]="selectedStudent.name">
       {{ selectedStudent.name }}
