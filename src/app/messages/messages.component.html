@@ -1,0 +1,6 @@
+
+<h2>Ovo su sve poruke:</h2>
+<button (click)="messageService.clearMessages()" type="button" name="button">Ocisti poruke</button>
+<div *ngFor="let poruka of messageService.messages">
+  {{ poruka }}
+</div>
